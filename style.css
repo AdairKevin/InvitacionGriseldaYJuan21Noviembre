@@ -8,15 +8,15 @@
 body {
   background: linear-gradient(
     to bottom,
-    #ffe1ba 0%,
-    #fbcf99 35%,
-    #ffcf8b 70%,
-    #ffe1ba 100%
+    #fff6e9 0%,
+    #d8c3a5 35%,
+    #d8c3a5 70%,
+    #f2e6d5 100%
   );
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -50,31 +50,26 @@ button {
 .portada img {
   width: 100%;
 
-  display: block;
-
   object-fit: cover;
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent);
 
-  -webkit-mask-image: linear-gradient(to bottom, black 82%, transparent);
-
-  mask-image: linear-gradient(to bottom, black 82%, transparent);
+  mask-image: linear-gradient(to bottom, black 90%, transparent);
 }
 
 /* Oscurece ligeramente la foto */
 
 .overlay-portada {
   position: absolute;
-
   inset: 0;
-
   background: linear-gradient(
-    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.09),
     rgba(0, 0, 0, 0.25),
     rgba(0, 0, 0, 0.45)
   );
 }
 
 .contenido-portada {
-  position: absolute;
+  position: relative;
 
   inset: 0;
 
@@ -90,42 +85,29 @@ button {
 }
 
 .textoPortada {
-  color: #fff;
-
+  margin-top: -200px;
+  color: #ffffff;
   font-size: 1.2rem;
-
   text-transform: uppercase;
-
   letter-spacing: 5px;
-
   margin-bottom: 18px;
-
   border-top: 1px solid rgba(255, 255, 255, 0.7);
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-
   padding: 10px 30px;
 }
 
 .textoNovios {
   font-family: "Great Vibes", cursive;
-
   font-size: 4rem;
-
   color: white;
-
   font-weight: normal;
-
   text-align: center;
-
   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .textoNovios span {
   font-family: "Times New Roman", serif;
-
   font-size: 2rem;
-
   margin: 0 12px;
 }
 
@@ -153,7 +135,7 @@ button {
   }
 
   .textoNovios {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
   .textoNovios span {
@@ -163,6 +145,7 @@ button {
 
 .reproducir {
   margin: auto 0;
+  margin-top: -30px;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -170,14 +153,14 @@ button {
 .reproducir button {
   border-radius: 50%;
   border: solid 1px #ffffff;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 .reproducir svg {
   width: 100%;
   height: 100%;
-  color: #f1cb9d;
+  color: #315a70;
 }
 
 .musica {
@@ -198,7 +181,6 @@ button {
 
 .contador p {
   font-size: 30px;
-  font-family: "Great Vibes", cursive;
   padding: 10px;
   margin-bottom: 10%;
   margin-top: 10%;
@@ -208,14 +190,13 @@ button {
   position: relative;
   text-align: center;
   color: #000000;
-  font-size: 50px;
-  margin-bottom: 10%;
-  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  margin-bottom: -1%;
+  font-family: "Unna", serif;
 }
 
 .conteo {
   font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
   color: rgb(0, 0, 0);
   margin-bottom: 5%;
   font-family: "Great Vibes", cursive;
@@ -243,7 +224,7 @@ td {
   border-bottom: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #f1cb9d;
+  background-color: #c66a4a;
   width: 20%;
   color: #000000;
   padding: 5px;
@@ -258,14 +239,15 @@ th {
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #f1cb9d;
+  background-color: #c66a4a;
   color: #000000;
   text-align: center;
   justify-content: center;
   padding: 5px;
   padding-bottom: 20px;
   font-size: 20px;
-  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-family: "Unna", serif;
 }
 
 /*=====================================
@@ -287,7 +269,7 @@ th {
 
   background: #f9f4eb;
 
-  border: 3px ridge #dcb27f;
+  border: 3px ridge #c66a4a;
 
   border-radius: 12px;
 
@@ -317,7 +299,7 @@ th {
 .adornoBiblia {
   font-size: 34px;
 
-  color: #b68a50;
+  color: #315a70;
 
   margin-bottom: 12px;
 }
@@ -327,7 +309,7 @@ th {
 
   font-size: 48px;
 
-  color: #5c4432;
+  color: #000000;
 
   margin-bottom: 15px;
 
@@ -339,7 +321,7 @@ th {
 
   height: 2px;
 
-  background: #dcb27f;
+  background: #c66a4a;
 
   margin: 20px auto 30px;
 }
@@ -358,22 +340,6 @@ th {
   font-style: italic;
 
   color: #444;
-}
-
-.versiculo strong {
-  color: #9d7444;
-
-  font-weight: bold;
-}
-
-.citaBiblia {
-  margin-top: 30px;
-
-  font-family: "Great Vibes", cursive;
-
-  font-size: 30px;
-
-  color: #9d7444;
 }
 
 /* Móvil */
@@ -405,6 +371,7 @@ th {
 
 .botonesVestimenta button {
   margin-bottom: 10px;
+
   margin-top: 10px;
 }
 .cronograma {
@@ -587,7 +554,7 @@ h5 {
   position: relative;
   text-align: center;
   padding: 5%;
-  background-color: #f2f2f2;
+  background-color: #f2e6d5;
   margin-top: 10%;
   margin-bottom: 10%;
   width: 100%;
@@ -733,11 +700,11 @@ h6 {
 
 .card {
   margin: 0 auto;
-  background-color: #e0d4ae;
+  background-color: #f2e6d5;
   width: 0%;
   height: 250px;
   margin-bottom: 10%;
-  border: 3px ridge #dcb27f;
+  border: 3px ridge #c66a4a;
 
   -webkit-animation: shadow-drop-2-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -759,7 +726,7 @@ h6 {
 }
 
 .hotel {
-  background-color: #c7d6bf;
+  background-color: #d8c3a5;
 }
 
 .boton {
@@ -771,7 +738,7 @@ h6 {
 .mesa {
   position: relative;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #f2e6d5;
   padding: 5%;
   margin-top: 15%;
   view-timeline-name: --container7;
@@ -1007,6 +974,8 @@ h6 {
 }
 
 .botones button {
+  color: #ffffff;
+  background-color: #315a70;
   margin-bottom: 20px;
 }
 
@@ -1057,7 +1026,7 @@ h6 {
 
   background: #faf6ef;
 
-  border: 3px ridge #dcb27f;
+  border: 3px ridge #c66a4a;
 
   padding: 35px 25px;
 
@@ -1080,7 +1049,7 @@ h6 {
 
 .iconoPadres {
   font-size: 28px;
-  color: #b68a50;
+  color: #315a70;
   margin-bottom: 10px;
 }
 
@@ -1106,7 +1075,7 @@ h6 {
   display: block;
   margin: 10px 0;
   font-size: 26px;
-  color: #b68a50;
+  color: #315a70;
   font-family: "Times New Roman", serif;
 }
 
@@ -1123,4 +1092,8 @@ h6 {
   .tituloPadres h2 {
     font-size: 42px;
   }
+}
+
+.btn {
+  background-color: #315a70;
 }
